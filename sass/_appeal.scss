@@ -1,0 +1,123 @@
+.appeal {
+    padding: 50px 0;
+    .appeal-list {
+        &__title {
+            margin-bottom: 23px;
+        }
+        &__items {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        &__item {
+            position: relative;
+            padding-left: 43px;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                border-radius: 100%;
+                background: #EC1630;
+                left: 28px;
+                top: 6px;
+            }
+        }
+    }
+    .appeal-form {
+        padding-top: 45px;
+        form {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 128px;
+        }
+        &__wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 25px;
+        }
+        &__title {
+            text-align: center;
+        }
+        &__label {
+            position: relative;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            width: 75px;
+            height: 100px;
+            border-radius: 10px;
+            border: 5px solid #C4C4C4;
+        }
+        &__circle {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            right: -15px;
+            top: -15px;
+            width: 38px;
+            height: 38px;
+            background: #ED1631;
+            border-radius: 100%;
+            border: 2px solid #C4C4C4;
+        }
+        &__input {
+            display: none;
+        }
+        &__img-ok {
+            display: none;
+        }
+        &__down-wrap {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            height: 111px;
+            &--btn {
+                align-items: flex-start;
+            }
+        }
+        &__price {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            color: red;
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+
+    .appeal-info {
+        margin-top: 50px;
+        padding: 15px;
+        background-color: lightgray;
+        border: 1px solid red;
+        &__text {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 14px;
+            color: #000000;
+        }
+    }
+}
+
+.btn {
+    width: 245px;
+    height: 36px;
+    background: #EC1630;
+    border-radius: 25px;
+    text-transform: uppercase;
+    border: none;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 154%;
+}
