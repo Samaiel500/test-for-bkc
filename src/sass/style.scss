@@ -1,0 +1,36 @@
+@import "variables";
+
+* {
+  box-sizing: border-box;
+}
+
+.text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #131718;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  &:hover {
+    color: inherit;
+  }
+}
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+@import "appeal";
+@import "media";

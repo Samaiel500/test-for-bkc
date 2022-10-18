@@ -1,0 +1,29 @@
+@media (max-width: 1080px) {
+    .container {
+        padding: 0 15px;
+    }
+    .appeal {
+        .appeal-form {
+            form {
+                gap: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .appeal {
+        padding: 25px 0;
+        .appeal-form {
+            form {
+                grid-template-columns: 1fr;
+            }
+            &__down-wrap {
+                justify-content: space-evenly;
+            }
+        }
+        .appeal-info {
+            margin-top: 10px;
+        }
+    }
+}
